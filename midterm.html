@@ -11,8 +11,9 @@
 
       var parent = new Date();
       var currentHours = parent.getHours()
-
-
+      
+      var rnd = Math.floor(Math.random() * 100) + 1;
+      
       if (currentHours < 18) {
         document.write("Good day," + " " + answer);
 
@@ -23,6 +24,10 @@
       document.write("<br>");
 
       document.write("Today's date is " + parent);
+      
+      document.write("</br>")
+      document.write("Your lucky number today is " + rnd + ".");
+      
 
 
 
